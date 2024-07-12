@@ -446,7 +446,7 @@ return file.startsWith('pre-key-')
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./MonkeyBot/${files}`)
+unlinkSync(`./DannyBot/${files}`)
 })
 } 
 
@@ -474,7 +474,7 @@ console.log(chalk.bold.red(lenguajeGB.smspurgeSessionSB3() + err))
 }}
 
 function purgeOldFiles() {
-const directories = ['./MonkeyBot/', './GataJadiBot/']
+const directories = ['./DannyBot/', './GataJadiBot/']
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
 if (err) throw err
