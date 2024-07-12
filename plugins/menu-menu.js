@@ -539,7 +539,7 @@ EJEMPLO: ${usedPrefix}8vs8 22:50 NEGRO
 
 ✓ _${usedPrefix}fytendencia | fyranking_
 
-> 🏆 *TOP en MONKEY* 🏆
+> 🏆 *TOP en Danny* 🏆
 
 ✓ _${usedPrefix}top | lb | leaderboard_
 
