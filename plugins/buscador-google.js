@@ -13,7 +13,7 @@ for (let g of res) {
 teks += `_${g.title}_\n_${g.link}_\n_${g.snippet}_\n\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n\n`
 } 
 const ss = `https://image.thum.io/get/fullpage/${url}`
-conn.sendFile(m.chat, ss, 'error.png', teks, fkontak, false, { contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '𝑴𝒐𝒏𝒌𝒆𝒚 𝑩𝒐𝒕 𝘾𝙧𝙚𝙖𝙙𝙤 𝙥𝙤𝙧 𝙈𝙤𝙣𝙤𝙫𝙖𝙣 𝙑𝙚𝙣𝙩𝙖𝙨', previewType: 0, thumbnail: imagen4, sourceUrl: accountsgb }}})
+conn.sendFile(m.chat, ss, 'error.png', teks, fkontak, false, { contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: 'Danny 𝑩𝒐𝒕 𝘾𝙧𝙚𝙖𝙙𝙤 𝙥𝙤𝙧 Danny 𝙑𝙚𝙣𝙩𝙖𝙨', previewType: 0, thumbnail: imagen4, sourceUrl: accountsgb }}})
 //m.reply(teks)
 })
 } catch {    
