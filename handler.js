@@ -1010,12 +1010,12 @@ sBye: '',
 sPromote: '',
 sDemote: '', 
 delete: true,
-modohorny: true,
+modohorny: false,
 stickers: false,
 autosticker: false,
 audios: false,
-antiver: true,
-antiLink: false,
+antiver: false,
+antiLink: true,
 antiLink2: false,
 antiTiktok: false,
 antiYoutube: false,
@@ -1025,8 +1025,8 @@ antiInstagram: false,
 antiTwitter: false,
 antifake: false,
 reaction: true,
-viewonce: true,
-modoadmin: false,
+viewonce: false,
+modoadmin: true,
 antitoxic: false,
 game: true, 
 game2: true, 
@@ -1052,7 +1052,7 @@ if (!('jadibotmd' in settings)) settings.jadibotmd = false
 self: false,
 autoread: false,
 autoread2: false,
-restrict: false,
+restrict: true,
 temporal: false,
 antiPrivate: false,
 antiCall: true,
@@ -1254,8 +1254,8 @@ if (xp > 2000)
 m.reply('Exp limit') // Hehehe
 else               
 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
-//this.reply(m.chat, `🐈 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝑴𝑶𝑵𝑲𝑬𝒀𝑪𝑶𝑰𝑵𝑺`, m)
-this.sendMessage(m.chat, {text: `🐈 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝑴𝑶𝑵𝑲𝑬𝒀𝑪𝑶𝑰𝑵𝑺`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '𝑴𝑶𝑵𝑲𝑬𝒀𝑩𝑶𝑻', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}, { quoted: m })         
+//this.reply(m.chat, `🍀 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝘿𝘼𝙉𝙉𝙔𝘾𝙊𝙄𝙉𝙎`, m)
+this.sendMessage(m.chat, {text: `🍀 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝘿𝘼𝙉𝙉𝙔𝘾𝙊𝙄𝙉𝙎`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '𝘿𝘼𝙉𝙉𝙔𝑩𝑶𝑻', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}, { quoted: m })         
 continue     
 }
 			
@@ -1266,7 +1266,7 @@ this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont7']()} *${usedPrefix}buy*`
 continue //Sin límite
 }
 if (plugin.level > _user.level) {
-this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '𝑴𝑶𝑵𝑲𝑬𝒀𝑩𝑶𝑻', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}, { quoted: m })         
+this.sendMessage(m.chat, {text: `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`,  contextInfo: {externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: gt, body: '𝘿𝘼𝙉𝙉𝙔𝑩𝑶𝑻', previewType: 0, thumbnail: gataImg, sourceUrl: accountsgb }}}, { quoted: m })         
 //this.reply(m.chat, `${lenguajeGB['smsCont9']()} *${plugin.level}* ${lenguajeGB['smsCont10']()} *${_user.level}* ${lenguajeGB['smsCont11']()} *${usedPrefix}nivel*`, m)
 continue // Si no se ha alcanzado el nivel
 }
@@ -1325,7 +1325,7 @@ if (m.limit)
 m.reply(+m.limit + lenguajeGB.smsCont8())
 }
 if (m.money)
-m.reply(+m.money + ' 𝑴𝑶𝑵𝑲𝑬𝒀𝑪𝑶𝑰𝑵𝑺 🐱 𝙐𝙎𝘼𝘿𝙊(𝙎)')  
+m.reply(+m.money + ' 𝘿𝘼𝙉𝙉𝙔𝘾𝙊𝙄𝙉𝙎 🍀 𝙐𝙎𝘼𝘿𝙊(𝙎)')  
 break
 }}} catch (e) {
 console.error(e)
@@ -1513,7 +1513,7 @@ restrict: lenguajeGB['smsRestrict'](),
 }[type]
 //if (msg) return m.reply(msg)
 let tg = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '𝑴𝑶𝑵𝑲𝑬𝒀' + gt + ' 𝗖𝗿𝗲𝗮𝗱𝗼 𝗽𝗼𝗿', '𝑴𝑶𝑵𝑶𝑽𝑨𝑵 𝑽𝑬𝑵𝑻𝑨𝑺'].getRandom(), thumbnail: gataImg, sourceUrl: accountsgb }}}}, tg)
+let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '𝑫𝑨𝑵𝑵𝒀' + gt + ' 𝗖𝗿𝗲𝗮𝗱𝗼 𝗽𝗼𝗿', '𝑫𝑨𝑵𝑵𝒀 𝑽𝑬𝑵𝑻𝑨𝑺'].getRandom(), thumbnail: gataImg, sourceUrl: accountsgb }}}}, tg)
 if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
 }
 
