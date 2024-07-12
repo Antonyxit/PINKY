@@ -544,7 +544,7 @@ EJEMPLO: ${usedPrefix}8vs8 22:50 NEGRO
 ✓ _${usedPrefix}listapremium | listprem_
 ✓ _${usedPrefix}añadirdiamantes *@tag cantidad*_
 ✓ _${usedPrefix}añadirxp *@tag cantidad*_
-✓ _${usedPrefix}añadirgatacoins *@tag cantidad*_
+✓ _${usedPrefix}añadirdannycoins *@tag cantidad*_
 `.trim()
 await conn.sendMessage(m.chat, {image: gataImg, caption: menu, mentions: mentionedJid}, {quoted: fkontak})    
 //conn.sendFile(m.chat, "./Menu2.jpg", 'gata.mp4', menu, fkontak)
