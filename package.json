@@ -1,7 +1,7 @@
 {
-"name": "MonkeyBot",
+"name": "DANNYBOT",
 "version": "1.0.0", 
-"description": "BY MONOVAN SHOP",
+"description": "BY DANNY SHOP",
 "main": "index.js",
 "type": "module",
     
@@ -19,7 +19,7 @@
     
 "homepage": "https://github.com/GataNina-Li/GataBot-MD",
 "author": {
-"name": "MONOVAN SHOP" },
+"name": "DANNY SHOP" },
     
 "repository": {
 "type": "git",
