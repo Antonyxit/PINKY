@@ -147,48 +147,10 @@ let margen = '*································�
 let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.genero == 'Ocultado 🕶️' ? `🕶️` : user.genero == 'Mujer 🚺' ? `🚺` : user.genero == 'Hombre 🚹' ? `🚹` : '👤'} ${user.registered === true ? user.name : taguser}* ${(conn.user.jid == global.conn.user.jid ? '' : `\n*SOY SUB BOT DE: https://wa.me/${global.conn.user.jid.split`@`[0]}*`) || ''}
 
 > *_${formatDate}_*
-> \`${nombreLugar} - ${ciudad}\`
-
-${margen}
-
-> 🌟 *INFORMACIÓN GENERAL* 🌟 
-
-*❰❰ ${lenguajeGB['smsTotalUsers']()} ❱❱* 
-➺ \`\`\`${Object.keys(global.db.data.users).length}\`\`\`
-
-*❰❰ Registrados ❱❱* 
-➺ \`\`\`${rtotalreg}/${totalreg}\`\`\`    
-
-*❰❰ ${lenguajeGB['smsUptime']()} ❱❱* 
-➺ \`\`\`${uptime}\`\`\`
-
-*❰❰ ${lenguajeGB['smsVersion']()} ❱❱* 
-➺ \`\`\`${vs}\`\`\`
-
-*❰❰ ${lenguajeGB['smsMode']()} ❱❱* 
-➺ \`${global.opts['self'] ? `${lenguajeGB['smsModePrivate']().charAt(0).toUpperCase() + lenguajeGB['smsModePrivate']().slice(1).toLowerCase()}` : `${lenguajeGB['smsModePublic']().charAt(0).toUpperCase() + lenguajeGB['smsModePublic']().slice(1).toLowerCase()}`}\`
-
-*❰❰ ${lenguajeGB['smsBanChats']()} ❱❱* 
-➺ \`\`\`${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}\`\`\`
-
-*❰❰ ${lenguajeGB['smsBanUsers']()} ❱❱* 
-➺ \`\`\`${Object.entries(global.db.data.users).filter(user => user[1].banned).length}\`\`\`
-
-${margen}
 
 > ✨ *INFORMACIÓN DEL USUARIO* ✨
 
-*❰❰ Tipo de registro ❱❱*
-➺ ${user.registered === true ? `_${user.registroC === true ? '🗂️ Registro Completo' : '📑 Registro Rápido'}_` : '❌ _Sin registro_'}
 
-*❰❰ Mi estado ❱❱*
-➺ ${typeof user.miestado !== 'string' ? '❌ *Establecer usando:* _' + usedPrefix + 'miestado_' : '_Me siento ' + user.miestado + '_'}
-
-*❰❰ Registrado ❱❱*
-➺ ${user.registered === true ? '✅ Verificado' : '❌ *Establecer registro usando:* _' + usedPrefix + 'verificar_'}
-
-*❰❰ ${lenguajeGB['smsBotonM7']().charAt(0).toUpperCase() + lenguajeGB['smsBotonM7']().slice(1).toLowerCase()} ❱❱* 
-➺ ${user.premiumTime > 0 ? '✅ Eres usuario Premium' : '❌ *Establecer Premium:* _' + usedPrefix + 'pase premium_'}
 
 *❰❰ ${lenguajeGB['smsBotonM5']().charAt(0).toUpperCase() + lenguajeGB['smsBotonM5']().slice(1).toLowerCase()} ❱❱* 
 ➺ ${role}
@@ -204,37 +166,14 @@ ${margen}
 
 ${margen}
 
-> 💫 *INFORMACIÓN* 💫\n
-${generateCommand(commandsInfo, usedPrefix)}
 
-${margen}
-
-> 🆘 *REPORTAR COMANDOS* 🆘\n
-${generateCommand(commandsReport, usedPrefix)}
-
-${margen}
-
-> 🎟️ *SER PREMIUM* 🎟️\n
-${generateCommand(commandsPrem, usedPrefix)}
-
-${margen}
 
 > 🎡 *JUEGOS* 🎡\n
 ${generateCommand(commandsGames, usedPrefix)}
 
 ${margen}
 
-> ✨ *IA* ✨\n
-${generateCommand(commandsAI, usedPrefix)}
 
-${margen}
-
-> ⚙️ *AJUSTES* ⚙️
-${m.isGroup ? `_✅ ➤ Activado_
-_❌ ➤ Desactivado_` : `Para ver la configuración completa sólo use: *${usedPrefix}on* o *${usedPrefix}off*`}\n
-${generateCommand(commandsConfig, usedPrefix).replace(/≡/g, '𖡡')}
-
-${margen}
 
 > LISTAS PARA VS DE CLANES DE FREE FIRE Y MAS
 
