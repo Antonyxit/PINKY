@@ -12,12 +12,12 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 // [ES] > Agrega el número que será Bot y los que serán propietarios.
 global.owner = [
-["+573044596953", 'Danny Shop', true], //Capibot Premium
-["+573044596953", 'Danny Shop', true], //Nekotina bot
-["+573044596953"]]
+["+5214777868112", 'Danny Shop', true], //Capibot Premium
+["+5214777868112", 'Danny Shop', true], //Nekotina bot
+["+5214777868112"]]
 
-global.mods = ["+573044596953"]
-global.prems = ["+573044596953"]
+global.mods = ["+5214777868112"]
+global.prems = ["+5214777868112"]
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
@@ -112,9 +112,9 @@ global.moment = moment
 // [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
-["573044596953", 'DANNY BOT', 1], 
-["573044596953", 'Anthony', 1],  
-["573044596953", 'Capibot', 1]]
+["+5214777868112", 'DANNY BOT', 1], 
+["+5214777868112", 'Anthony', 1],  
+["+5214777868112", 'Capibot', 1]]
 
 global.mail = '' // Add email
 global.desc = '' // Add short description (20 caractres max)
@@ -122,8 +122,8 @@ global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-global.packname = "DANNY BOY"
-global.author = "DANNY SHOP"
+global.packname = "𝙋𝙄𝙉𝙆𝙔 BOT"
+global.author = "𝙋𝙄𝙉𝙆𝙔 BOT"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 // [ES] > INFORMACIÓN DE VERSIONES DEL BOT, POR FAVOR 
@@ -157,8 +157,8 @@ global.eg = '╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 | 𝙎𝙐𝘾𝘾𝙀𝙎�
 global.exito = eg
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-global.wm = "DANNY"
-global.igfg = "DANNY"
+global.wm = "𝙋𝙄𝙉𝙆𝙔"
+global.igfg = "𝙋𝙄𝙉𝙆𝙔"
 global.nomorown = "573044596953"
 global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.ms-excel", "application/msword", "application/pdf", "text/rtf"]
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
