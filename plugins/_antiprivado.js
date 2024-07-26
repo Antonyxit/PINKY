@@ -6,7 +6,7 @@ export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) 
   const chat = global.db.data.chats[m.chat];
   const bot = global.db.data.settings[this.user.jid] || {};
   if (bot.antiPrivate && !isOwner && !isROwner) {
-    await m.reply(`*[❗] Hola @${m.sender.split`@`[0]}, Esta prohibido hablar al privado del bot pero si deseas comprarlo habla al siguiente numero \nhttps://wa.me/+573044596953
+    await m.reply(`*[❗] Hola @${m.sender.split`@`[0]}, Esta prohibido hablar al privado del bot pero si deseas comprarlo habla al siguiente numero \nhttps://wa.me/+5214777868112
     *`, false, {mentions: [m.sender]});
     await this.updateBlockStatus(m.chat, 'block');
   }
